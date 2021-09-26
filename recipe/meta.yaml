@@ -1,4 +1,4 @@
-{% set version = '0.3.1' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3measures_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3measures/mlr3measures_{{ version }}.tar.gz
-  sha256: 46c2013f40a7cf7d332c966e4571788dd1186b85fdfcaa4dc8e19c24db2453a2
+  sha256: 2e15124b768a49d0edb99e11df04182cb56c2c65767c36f917e44f55ac7298e2
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -41,13 +41,10 @@ test:
 about:
   home: https:///mlr3measures.mlr-org.com, https://github.com/mlr-org/mlr3measures
   license: LGPL-3.0-only
-  summary: Implements multiple performance measures for supervised learning.  Includes over 40
-    measures for regression and classification. Additionally, meta information about
-    the performance measures can be queried, e.g. what the best and worst possible performances
-    scores are.
+  summary: Implements multiple performance measures for supervised learning.  Includes over 40 measures for regression and classification. Additionally, meta information about the performance measures can be queried, e.g. what the best and worst possible performances scores are.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
