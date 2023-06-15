@@ -1,11 +1,11 @@
-About r-mlr3measures
-====================
+About r-mlr3measures-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3measures-feedstock/blob/main/LICENSE.txt)
 
 Home: https:///mlr3measures.mlr-org.com, https://github.com/mlr-org/mlr3measures
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3measures-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implements multiple performance measures for supervised learning.  Includes over 40 measures for regression and classification. Additionally, meta information about the performance measures can be queried, e.g. what the best and worst possible performances scores are.
 
