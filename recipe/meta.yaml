@@ -26,10 +26,12 @@ requirements:
     - r-base
     - r-prroc
     - r-checkmate
+    - r-mlr3misc
   run:
     - r-base
     - r-prroc
     - r-checkmate
+    - r-mlr3misc
 
 test:
   commands:
